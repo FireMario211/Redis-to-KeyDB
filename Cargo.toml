@@ -1,0 +1,11 @@
+[package]
+name = "redis-to-keydb"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+redis = { version = "0.25.3", features = ["tokio-comp"] }
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread"] }
+clap = { version = "4.5.4", features = ["derive"] }
